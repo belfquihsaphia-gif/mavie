@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<script type="ef140c62f8bea692eb01b573-text/javascript">
+<script type="text/javascript">
 /* Chien de garde : affiche un diagnostic si l'appli ne démarre pas */
 (function(){
   window.addEventListener('error',function(e){
@@ -321,7 +321,7 @@ details.arch summary::-webkit-details-marker{display:none}
  .wgrid{grid-template-columns:1fr}
 }
 </style>
-<script type="ef140c62f8bea692eb01b573-text/javascript">
+<script type="text/javascript">
 /* ===== Chien de garde : vérifie que l'appli a bien démarré ===== */
 (function () {
   var erreurs = [];
@@ -388,7 +388,7 @@ Si ce message reste affiché, l'appli n'a pas démarré.<br>
 <span id="mv-boot-js">❌ <b>JavaScript ne s'exécute pas.</b> Sur iPad : Réglages → Apps → Safari → Avancé → active <b>JavaScript</b>, désactive les bloqueurs de contenu, puis recharge la page.</span>
 </div>
 <noscript><div style="position:fixed;bottom:0;left:0;right:0;z-index:2147483647;background:#7a1f3d;color:#fff;padding:12px 16px;font:15px/1.45 -apple-system,system-ui,sans-serif">⚠️ JavaScript est désactivé dans Safari : l'appli ne peut pas fonctionner. Réglages → Apps → Safari → Avancé → JavaScript.</div></noscript>
-<script type="ef140c62f8bea692eb01b573-text/javascript">try{var mvj=document.getElementById('mv-boot-js');if(mvj)mvj.innerHTML='✅ <b>JavaScript fonctionne.</b> Si ce message ne disparaît pas après quelques secondes, le script principal a planté ou le fichier est incomplet (coupé). Fais une capture et envoie-la moi !'}catch(_){}</script>
+<script type="text/javascript">try{var mvj=document.getElementById('mv-boot-js');if(mvj)mvj.innerHTML='✅ <b>JavaScript fonctionne.</b> Si ce message ne disparaît pas après quelques secondes, le script principal a planté ou le fichier est incomplet (coupé). Fais une capture et envoie-la moi !'}catch(_){}</script>
 <div id="lock" class="hidden"><div class="card center" style="max-width:340px;width:100%;padding:32px"><div class="brand" style="padding:0 0 6px">Ma vie <i>✿</i></div><p class="sub">Entre ton code pour accéder à ton espace</p><form onsubmit="if (!window.__cfRLUnblockHandlers) return false; event.preventDefault();tryUnlock()" data-cf-modified-ef140c62f8bea692eb01b573-=""><input id="lockIn" type="password" inputmode="numeric" placeholder="Code" class="mt" style="text-align:center;letter-spacing:6px"><button class="btn mt" style="width:100%;justify-content:center">Déverrouiller</button></form><p id="lockErr" class="sub mt" style="color:#b56b63"></p></div></div>
 <aside id="side"></aside>
 <div id="scrim" onclick="if (!window.__cfRLUnblockHandlers) return false; document.body.classList.remove('menu')" data-cf-modified-ef140c62f8bea692eb01b573-=""></div>
@@ -406,11 +406,11 @@ Si ce message reste affiché, l'appli n'a pas démarré.<br>
 <div id="modal" class="hidden"><div class="mbox"></div></div>
 <div id="toast"></div>
 
-<script type="ef140c62f8bea692eb01b573-text/javascript">
+<script type="text/javascript">
 /* Diagnostic : si le script principal plante, on affiche l'erreur au lieu d'une page vide */
 window.addEventListener('error',function(e){try{var d=document.createElement('div');d.style.cssText='position:fixed;left:12px;right:12px;bottom:90px;z-index:9999;background:#fff3f1;color:#8a3f3a;border:1px solid #e3b5b0;border-radius:14px;padding:14px;font:13px/1.4 system-ui,sans-serif;box-shadow:0 8px 30px rgba(0,0,0,.12)';d.textContent='Oups, l\'appli n\'a pas pu démarrer : '+(e.message||'erreur inconnue')+(e.lineno?' (ligne '+e.lineno+')':'')+'. Fais une capture d\'écran de ce message.';document.body.appendChild(d)}catch(_){}});
 </script>
-<script type="ef140c62f8bea692eb01b573-text/javascript">
+<script type="text/javascript">
 /* =========================================================
    MA VIE · PLANNER — données stockées localement (localStorage + IndexedDB)
    ========================================================= */
@@ -1060,7 +1060,7 @@ window.addEventListener('storage',e=>{if(e.key===KEY){try{S=Object.assign(DEF(),
 function onboard(){if(!S.settings.name)form('Bienvenue dans ton espace ✿',[{k:'name',label:'Comment t\'appelles-tu ?',req:1,full:1,ph:'Ton prénom'}],{},o=>{S.settings.name=o.name;save();render(true)})}
 (async function init(){applyTheme();buildShell();try{await Promise.race([FS.open(),new Promise(function(r){setTimeout(r,2500)})])}catch(e){console.warn('IndexedDB indisponible',e)}render(true);var mvb=document.getElementById('mv-boot');if(mvb)mvb.remove();checkReminders();if(S.settings.pin)showLock();else onboard()})();
 </script>
-<script type="ef140c62f8bea692eb01b573-text/javascript">
+<script type="text/javascript">
 (function(){function ok(){var s=document.getElementById('side');return s&&s.children.length>0}
 function hide(){var b=document.getElementById('mv-boot');if(b&&ok())b.remove()}
 hide();document.addEventListener('DOMContentLoaded',hide);window.addEventListener('load',hide);
