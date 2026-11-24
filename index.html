@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+<head><script type="text/javascript">
+if (location.search.indexOf('resetcode') > -1) {
+  try {
+    var d = JSON.parse(localStorage.getItem('mavie_planner_v1'));
+    if (d && d.settings) { delete d.settings.pin; localStorage.setItem('mavie_planner_v1', JSON.stringify(d)); }
+  } catch (e) {}
+  location.replace(location.pathname);
+}
+</script>
 <script type="text/javascript">
 /* Chien de garde : affiche un diagnostic si l'appli ne démarre pas */
 (function(){
